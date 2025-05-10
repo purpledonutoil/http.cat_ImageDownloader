@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class HttpImageStatusClient {
+public class HttpImageStatusCli {
     HttpStatusImageDownloader httpStatusImageDownloader = new HttpStatusImageDownloader();
 
     public void askStatus(){
@@ -25,7 +25,7 @@ public class HttpImageStatusClient {
     }
 
     public static void main(String[] args) {
-        HttpImageStatusClient h = new HttpImageStatusClient();
+        HttpImageStatusCli h = new HttpImageStatusCli();
         h.askStatus();
     }
 }

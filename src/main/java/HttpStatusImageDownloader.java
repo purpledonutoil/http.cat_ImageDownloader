@@ -20,7 +20,7 @@ public class HttpStatusImageDownloader{
         try(InputStream in = new URL(webPage).openStream()){
             Files.copy(in, Paths.get("images/" + webPage.substring(17)), StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Cannot save picture");
         }
     }
 }
